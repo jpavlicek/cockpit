@@ -255,6 +255,9 @@
                 this.checkselected();
 
                 this.loading = false;
+				
+				// load collections for collectionlinkid field types
+				App.Utils.populateCollectionlinkId(this);
 
                 this.update();
 
